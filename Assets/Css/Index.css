@@ -1,0 +1,91 @@
+/* FUENTES */
+.f-textos {
+    font-family: "aaux-next", sans-serif;
+    font-weight: 100 !important;
+    font-style: normal;
+}
+
+.f-secun {
+    font-family: "aaux-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.f-titulos {
+    font-family: "owners-xxwide", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem
+}
+
+.f-titulos2 {
+    font-family: "owners-xxwide", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* BOTON */
+.btn.b-1 {
+    font-family: "owners", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn.b-1:hover {
+    font-family: "owners", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background-color: #D17AA9;
+    color: #fff;
+}
+
+/* IMGS PROYECTOS */
+.proyecto {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-proyecto {
+    transition: transform 0.3s ease; 
+}
+
+.img-proyecto:hover {
+    transform: scale(1.1);
+}
+
+
+.img-proyecto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #30302fb1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .img-proyecto:hover::before {
+    opacity: 1;
+  }
+  
+  .texto-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    font-family: "owners", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  .img-proyecto:hover .texto-hover {
+    opacity: 1;
+  }
